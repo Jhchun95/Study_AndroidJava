@@ -25,8 +25,9 @@ public class MainActivity extends AppCompatActivity {
 
     private TextView textView;
     private Button button;
-    private ImageView imageView1, imageView2, imageView3;
-    String url ="https://www.canva.com/photos/free/";
+    private ImageView imageView1, imageView2, imageView3, imageView4, imageView5, imageView6,
+                       imageView7, imageView8, imageView9, imageView10;
+    String url ="http://192.168.0.16:3000";
     String title, link, src;
     //now to store the links we use array list
     ArrayList list = new ArrayList();
@@ -42,6 +43,15 @@ public class MainActivity extends AppCompatActivity {
         imageView1 = (ImageView) findViewById(R.id.imageView_id);
         imageView2 = (ImageView) findViewById(R.id.imageView);
         imageView3 = (ImageView) findViewById(R.id.imageView2);
+        imageView4 = (ImageView) findViewById(R.id.imageView3);
+        imageView5 = (ImageView) findViewById(R.id.imageView4);
+        imageView6 = (ImageView) findViewById(R.id.imageView5);
+        imageView7 = (ImageView) findViewById(R.id.imageView6);
+        imageView8 = (ImageView) findViewById(R.id.imageView7);
+        imageView9 = (ImageView) findViewById(R.id.imageView8);
+        imageView10 = (ImageView) findViewById(R.id.imageView9);
+
+
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -66,6 +76,13 @@ public class MainActivity extends AppCompatActivity {
             Picasso.with(getApplicationContext()).load(list.get(0).toString()).into(imageView1);
             Picasso.with(getApplicationContext()).load(list.get(1).toString()).into(imageView2);
             Picasso.with(getApplicationContext()).load(list.get(2).toString()).into(imageView3);
+            Picasso.with(getApplicationContext()).load(list.get(3).toString()).into(imageView4);
+            Picasso.with(getApplicationContext()).load(list.get(4).toString()).into(imageView5);
+            Picasso.with(getApplicationContext()).load(list.get(5).toString()).into(imageView6);
+            Picasso.with(getApplicationContext()).load(list.get(6).toString()).into(imageView7);
+            Picasso.with(getApplicationContext()).load(list.get(7).toString()).into(imageView8);
+            Picasso.with(getApplicationContext()).load(list.get(8).toString()).into(imageView9);
+            Picasso.with(getApplicationContext()).load(list.get(9).toString()).into(imageView10);
 
             progressDialog.dismiss();
         }
