@@ -1,0 +1,33 @@
+<html>
+<head>
+    <script>
+        count = 1; // 전역변수
+        function changeFace() {
+//          getElementById("태그에 붙여준 id") : 현재 html 문서에서 특정 id를 가지는
+//          Element(태그)를 얻어온다.
+
+            if(count % 2 == 1) {
+//              현재 문서의 태그 중에서 id가 face인 img 태그를 얻어와서 src 속성을 변경시킨다.
+                document.getElementById("face").src = "face_angry.png";
+            } else {
+                document.getElementById("face").src = "face_normal.png";
+            }
+            count++;
+        }
+    </script>
+</head>
+<body>
+    <!--
+        안드로이드 누가 버전까지 html 파일의 javascript를 실행할 메소드를 onclick 이벤트로
+        아래와 같이 걸어줬었다. => 오레오 버전부터 안걸어줘도 실행된다.
+        <a onclick="[window].[html 파일명].[안드로이드에서 javascript를 실행할 메소드 이름()]">
+    -->
+    <!--<a onclick="window.sample.clickOnFace()">--> <!-- 누가 이전버전 코딩 -->
+    <a onclick="changeFace()">                       <!-- 오레오 이후버전 코딩 -->
+        <div style="text-align: center; border: 2px solid #FF0000; width: 130px; margin: 0px auto; padding: 10px;">
+            <img id="face" src="face_normal.png"/><br/>
+            마우스로 곰탱이를 눌러보세요<br/>
+        </div>
+    </a>
+</body>
+</html>

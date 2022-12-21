@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!--
+        Tablayout은 액티비티를 변경하지 않고 액티비티에서 여러 내용을 보기 위해서 tab을 만든다.
+        TabLayout을 사용하려면 build.gradle(Module:app) 파일을 열고 dependencies의 {} 블록에 아래의 내용을 추가해야한다.
+        implementation 'com.android.support:design:사용하는 SDK버전'
+        안드로이드 스튜디오 3.0버전 전에는 implementation이 아니라 compile이라고 나왔었다.
+    -->
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

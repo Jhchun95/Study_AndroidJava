@@ -1,0 +1,29 @@
+[
+  {
+    "title": "",
+    "cards": [
+      {
+        "id": 1,
+        "type": "DEFAULT",
+        "title": "Slide Show",
+        "localImageResource": "img",
+        "description": "Slide Show"
+      },
+      {
+        "id": 2,
+        "type": "DEFAULT",
+        "title": "Image",
+        "localImageResource": "emg",
+        "description": "Image"
+      },
+      {
+        "id": 3,
+        "type": "DEFAULT",
+        "title": "Video",
+        "localImageResource": "vid",
+        "description": "Video"
+      }
+
+    ]
+  }
+]

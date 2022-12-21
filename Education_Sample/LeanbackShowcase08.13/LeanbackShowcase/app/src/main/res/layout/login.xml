@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:visibility="visible">
+
+    <ImageView
+        android:id="@+id/logoCompany"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_marginTop="15dp"
+        android:background="#000000"
+        android:padding="20dp"
+        android:src="@drawable/ic_cloudike_symbol"
+        android:visibility="visible"
+        tools:visibility="visible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="20px"
+        android:textSize="20dp"
+        android:text="L O G I N"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:text="클라우다이크에 로그인하세요" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textColorHighlight="#FFFFFF"
+                android:hint="이메일"
+                android:textColor="#FFFFFF"
+                android:nextFocusDown="@+id/password"/>
+            <ImageView
+                android:id="@+id/emailcheck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/username"
+                android:visibility="invisible"
+                android:layout_centerInParent="true"
+                android:background="#000000"
+                android:src="@drawable/ic_cloudike_check" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:hint="비밀번호"
+                android:textColorHighlight="#FFFFFF"
+                android:inputType="textPassword"
+                android:password="true"
+                android:textColor="#FFFFFF" />
+            <ImageButton
+                android:id="@+id/passwordvisibility"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/passwordcheck"
+                android:layout_alignRight="@+id/password"
+                android:onClick="ShowHidePass"
+                android:src="@drawable/ic_cloudike_passwordhide" />
+            <ImageView
+                android:id="@+id/passwordcheck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_alignRight="@id/password"
+                android:layout_centerInParent="true"
+                android:background="#000000"
+                android:src="@drawable/ic_cloudike_check"/>
+        </RelativeLayout>
+
+        <Button
+            style="?android:attr/borderlessButtonStyle"
+            android:id="@+id/loginbtn"
+            android:layout_marginTop="20dp"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@drawable/intro_login_btn_disabled"
+            android:text="로그인"
+            android:enabled="false"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:textColor="#000000" />
+
+    </LinearLayout>
+
+</LinearLayout>

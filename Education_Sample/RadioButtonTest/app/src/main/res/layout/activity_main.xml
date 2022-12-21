@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:onClick="selectCheckBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="버튼으로 체크 박스 선택하기"/>
+
+    <!--
+        RadioButton은 같은 그룹끼리 RadioGroup을 이용해서 그룹으로 묶어줘야 정상적으로 동작한다.
+        RadioButton의 android:checked="true" 속성을 설정하면 설정된 RadioButton이 프로그램이 실행될 때
+        자동으로 체크되는데 정상적으로 동작되게 하려면 반드시 id 속성을 지정해야한다.
+    -->
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="남자"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/radio2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="여자"/>
+
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="하루종일"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:onClick="ViewResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="결과 확인하기"/>
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="이곳에 선택한 결과가 나와요"/>
+
+</LinearLayout>

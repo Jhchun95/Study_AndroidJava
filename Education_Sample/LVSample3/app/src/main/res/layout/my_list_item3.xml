@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COM.NALSIL.LISTVIEWSAMPLE.CHECKABLERELATIVELAYOUT
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    nalsil:checkable="@+id/check"
+    xmlns:nalsil="http://schemas.android.com.example.jjh10.lvsample3.MainActivity">
+
+    <ImageView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/img"
+        android:focusable="false"
+        android:backgroundTint="@drawable/icon"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true" />
+
+    <CheckBox
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@id/check"
+        android:focusable="false"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:clickable="true"
+        android:layout_marginRight="5dip"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/title"
+        android:focusable="false"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/img" />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/summary"
+        android:text="This is my list item layout"
+        android:focusable="false"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/img"
+        android:layout_below="@id/title" />
+
+</COM.NALSIL.LISTVIEWSAMPLE.CHECKABLERELATIVELAYOUT>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!--
+        레이아웃의 폭과 높이를 뜻한다. wrap 또는 match
+        match_parent : 위젯이 배치되는 레이아웃의 크기만큼 위젯의 크기로 지정한다.
+        wrap_content : 컨텐츠의 크기 만큼 위젯의 크기로 지정한다.
+        색상을 지정할 때 #RRGGBB 형식과 #AARRGGBB => A는 Alpha값, 즉, 투명도를 의미한다.
+
+        android:gravity : layout_width가 match_parent일 경우 위젯의 정렬 방식을 지정한다.
+        android:layout_alignParentBottom="true" : RelativeLayout을 사용할 경우 위젯을 RelativeLayout의 아래쪽에 배치한다.
+
+    -->
+
+    <!--
+       자동 연결 설정하기
+       ▶ android:autoLink="web" => android:text에 입력한 인터넷 url로 연결한다.
+          만약에 인터넷에 연결되지 않으면 manifests 폴더의 AndroidManifest.xml 파일을 열어서 아래의 내용을 코딩한다.
+          <uses-permission android:name="android.permission.INTERNET"/>
+       ▶ android:autoLink="email" => android:text에 입력한 이메일 주소로 메일을 보내는 화면이 나타난다.
+       ▶ android:autoLink="phone" => android:text에 입력한 전화번호로 전화를 걸 수 있도록 전화번호 키패드가 나타난다.
+          만약에 전화번호 키패드가 나타나지 않으면 manifest 폴더의 AndroidManifest.xml 파일을 열어 아래의 내용을 코딩한다.
+          <uses-permission android:name="android.permission.CALL_PHONE"/>
+    -->
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="a@a.com"
+        android:gravity="center"
+        android:textSize="12pt"
+        android:textColor="#0000FF"
+        />
+
+        <!-- android:autoLink="web"-->
+    <!--
+        Layout을 설정하는 xml 파일에서 만들어준 위젯을 프로그램에서 사용하려면 어떤 위젯인가 식별할 수 있어야 한다.
+        프로그램에서 위젯을 식별할 수 있게 하려면 android:id로 id를 설정하면 되고 id가 최초로 나타날 때 @+id로 추가한다.
+        btn이라는 식별자
+    -->
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="http://m.naver.com"
+        android:gravity="center"
+        android:textSize="12pt"
+        android:textColor="#0000FF"
+        android:layout_alignParentBottom="true"
+        />
+<!--        android:autoLink="web" -->
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="눌러줘"
+        android:layout_centerInParent="true"
+        />
+
+     <!--
+        android:onClick 속성으로 버튼이 클릭되면 실행할 메소드를 지정할 수 있다.
+     -->
+
+    <Button
+        android:id="@+id/btn2"
+        android:onClick="callPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="전화걸기"
+        android:layout_below="@id/btn"
+        android:layout_alignLeft="@id/btn"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_launcher_background"
+        android:layout_above="@id/btn"
+        />
+
+</RelativeLayout>

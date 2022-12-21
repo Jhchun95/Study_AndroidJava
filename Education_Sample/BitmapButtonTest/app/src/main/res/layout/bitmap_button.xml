@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 버튼의 높이가 컨텐츠 크기 만큼만 작성되야 하므로 android:layout_height 속성을 wrap_content로 변경해야 한다. -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!--  비트맵 버튼 레이아웃  -->
+    <Button
+        android:id="@+id/baseBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/title_bitmap_button_normal"
+        android:text="역병이 돌고 있어요"
+        android:textColor="#FFFFFF" />
+    <Button
+        android:id="@+id/leftBtn"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/arrow_left"
+        android:layout_marginLeft="10dp"/>
+    <Button
+        android:id="@+id/rightBtn"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/arrow_right"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentRight="true"/>
+
+
+</RelativeLayout>

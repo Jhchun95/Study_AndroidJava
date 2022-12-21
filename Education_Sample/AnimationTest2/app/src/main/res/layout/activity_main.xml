@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btnSequence"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sequence Animation"
+            android:textAllCaps="false"
+            android:layout_margin="5dp" />
+        <TextView
+            android:id="@+id/tvSequence"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sequence"
+            android:textSize="10pt"
+            android:layout_toRightOf="@+id/btnSequence"
+            android:layout_alignBaseline="@+id/btnSequence" />
+
+        <Button
+            android:id="@+id/btnFadeIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FadeIn Animation"
+            android:textAllCaps="false"
+            android:layout_margin="5dp"
+            android:layout_below="@+id/btnSequence"/>
+        <TextView
+            android:id="@+id/tvFadeIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FadeIn"
+            android:textSize="10pt"
+            android:layout_toRightOf="@+id/btnSequence"
+            android:layout_alignBaseline="@+id/btnFadeIn" />
+
+        <Button
+            android:id="@+id/btnFadeOut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FadeOut Animation"
+            android:textAllCaps="false"
+            android:layout_margin="5dp"
+            android:layout_below="@+id/btnFadeIn"/>
+        <TextView
+            android:id="@+id/tvFadeOut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FadeOut"
+            android:textSize="10pt"
+            android:layout_toRightOf="@+id/btnSequence"
+            android:layout_alignBaseline="@+id/btnFadeOut" />
+
+
+        <Button
+            android:id="@+id/btnCrossFade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CrossFade Animation"
+            android:textAllCaps="false"
+            android:layout_margin="5dp"
+            android:layout_below="@+id/btnFadeOut"/>
+        <TextView
+            android:id="@+id/tvCrossFadeIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CroosFadeIn"
+            android:textSize="10pt"
+            android:visibility="invisible"
+            android:textColor="#FF0000"
+            android:layout_toRightOf="@+id/btnSequence"
+            android:layout_alignBaseline="@+id/btnCrossFade" />
+        <TextView
+            android:id="@+id/tvCrossFadeOut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CroosFadeOut"
+            android:textSize="10pt"
+            android:textColor="#0000FF"
+            android:layout_toRightOf="@+id/btnSequence"
+            android:layout_alignBaseline="@+id/btnCrossFade" />
+
+        <Button
+            android:id="@+id/btnBlink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Blink Animation"
+            android:textAllCaps="false"
+            android:layout_margin="5dp"
+            android:layout_below="@+id/btnCrossFade"/>
+        <TextView
+            android:id="@+id/tvBlink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Blink"
+            android:textSize="10pt"
+            android:layout_toRightOf="@+id/btnSequence"
+            android:layout_alignBaseline="@+id/btnBlink" />
+
+        <Button
+            android:id="@+id/btnZoomIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ZoomIn Animation"
+            android:textAllCaps="false"
+            android:layout_margin="5dp"
+            android:layout_below="@+id/btnBlink"/>
+        <TextView
+            android:id="@+id/tvZoomIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ZoomIn"
+            android:textSize="10pt"
+            android:layout_toRightOf="@+id/btnSequence"
+            android:layout_alignBaseline="@+id/btnZoomIn" />
+
+        <Button
+            android:id="@+id/btnZoomOut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ZoomOut Animation"
+            android:textAllCaps="false"
+            android:layout_margin="5dp"
+            android:layout_below="@+id/btnZoomIn"/>
+        <TextView
+            android:id="@+id/tvZoomOut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ZoomOut"
+            android:textSize="10pt"
+            android:layout_toRightOf="@+id/btnSequence"
+            android:layout_alignBaseline="@+id/btnZoomOut" />
+
+        <Button
+            android:id="@+id/btnRotate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rotate Animation"
+            android:textAllCaps="false"
+            android:layout_margin="5dp"
+            android:layout_below="@+id/btnZoomOut"/>
+        <TextView
+            android:id="@+id/tvRotate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rotate"
+            android:textSize="10pt"
+            android:layout_toRightOf="@+id/btnSequence"
+            android:layout_alignBaseline="@+id/btnRotate" />
+
+        <Button
+            android:id="@+id/btnMove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Move Animation"
+            android:textAllCaps="false"
+            android:layout_margin="5dp"
+            android:layout_below="@+id/btnRotate"/>
+        <TextView
+            android:id="@+id/tvMove"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Move"
+            android:textSize="10pt"
+            android:layout_toRightOf="@+id/btnSequence"
+            android:layout_alignBaseline="@+id/btnMove" />
+
+        <Button
+            android:id="@+id/btnSlideUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SlideUp Animation"
+            android:textAllCaps="false"
+            android:layout_margin="5dp"
+            android:layout_below="@+id/btnMove"/>
+        <TextView
+            android:id="@+id/tvSlideUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SlideUp"
+            android:textSize="10pt"
+            android:layout_toRightOf="@+id/btnSequence"
+            android:layout_alignBaseline="@+id/btnSlideUp" />
+
+        <Button
+            android:id="@+id/btnSlideOut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SlideOut Animation"
+            android:textAllCaps="false"
+            android:layout_margin="5dp"
+            android:layout_below="@+id/btnSlideUp"/>
+        <TextView
+            android:id="@+id/tvSlideOut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SlideOut"
+            android:textSize="10pt"
+            android:layout_toRightOf="@+id/btnSequence"
+            android:layout_alignBaseline="@+id/btnSlideOut" />
+
+    </RelativeLayout>
+
+</ScrollView>

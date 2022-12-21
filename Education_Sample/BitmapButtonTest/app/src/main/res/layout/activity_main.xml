@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <!--  안드로이드에서 기본적으로 제공되는 위젯이 아닐 경우 위젯을 먼저 만든 후 레이아웃을 구성해야 한다.  -->
+    <com.example.bitmapbuttontest.TitleButton
+        android:id="@+id/titleBtn"
+        android:onClick="clickTitleBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:text="9-Patch 이미지를 사용한 사용자 정의 버튼"/>
+
+    <com.example.bitmapbuttontest.BitmapTitleButton
+        android:id="@+id/bitmapBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:textColor="#A566FF"
+        android:layout_width="119dp"
+        android:layout_height="wrap_content"
+        android:text="음악 설정" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup_music"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rb_music1"
+            android:layout_weight="1"
+            android:textColor="#A566FF"
+            android:text="음악1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <RadioButton
+            android:id="@+id/rb_music2"
+            android:layout_weight="1"
+            android:textColor="#A566FF"
+            android:text="음악2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <RadioButton
+            android:id="@+id/rb_music3"
+            android:layout_weight="1"
+            android:textColor="#A566FF"
+            android:text="음악3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RadioGroup>
+
+    <Button
+        android:text="선택"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:textColor="#A566FF"
+        android:layout_width="119dp"
+        android:layout_height="wrap_content"
+        android:text="슬라이드 설정" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup_slide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rb_slide1"
+            android:layout_weight="1"
+            android:textColor="#A566FF"
+
+            android:text="슬라이드1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <RadioButton
+            android:id="@+id/rb_slide2"
+            android:layout_weight="1"
+            android:textColor="#A566FF"
+            android:text="슬라이드2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <RadioButton
+            android:id="@+id/rb_slide3"
+            android:layout_weight="1"
+            android:textColor="#A566FF"
+            android:text="슬라이드3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RadioGroup>
+
+    <Button
+        android:text="선택"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

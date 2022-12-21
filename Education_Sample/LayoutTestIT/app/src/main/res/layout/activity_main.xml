@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+<!--
+    LinearLayout은 반드시 android:orientation 속성을 지정해야한다. => 위젯들이 배치되는 방향을 지정한다.
+    horizontal(기본값) => 위젯이 가로 방향으로 배치된다.
+    vertical => 위젯이 세로 방향으로 배치된다.
+    wrap_content => 글씨 크기만큼 차지한다.
+    android:textAllCaps 속성은 영문자 대소문자 표시 방법을 지정한다.
+        ▶ true(기본값) => 무조건 대문자로 영문자를 표시한다.
+        ▶ false => 대소문자 구분해서 영문자를 표시한다.
+
+
+
+        viewActivity 라는 메소드를 만들겠어!
+-->
+
+    <Button
+        android:id="@+id/btn1"
+        android:onClick="viewActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LinearLayout 연습1(가로)"
+        android:textAllCaps="false"
+        />
+
+    <Button
+        android:id="@+id/btn2"
+        android:onClick="viewActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LinearLayout 연습2(세로)"
+        android:textAllCaps="false"
+        />
+
+    <Button
+        android:id="@+id/btn3"
+        android:onClick="viewActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LinearLayout 연습3(활용)"
+        android:textAllCaps="false"
+        />
+
+</LinearLayout>

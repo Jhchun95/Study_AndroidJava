@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Main4Activity">
+
+<!--
+     layout_width와 layout_height가 둘 다 wrap_content 일 때 이동할 공간이 없기 때문에 layout_gravity를 선언한다.
+     layout_width와 layout_height가 각각 match_parent와 wrap_content 일 때 그냥 gravity를 선언한다.
+-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20pt"
+        android:text="로그인 화면"
+        android:gravity="center"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="사용자아이디 : "
+            />
+
+        <EditText
+            android:id="@+id/et1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="사용자 아이디를 입력하시오"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="사용자 비 번 : "
+            />
+
+<!--
+    비밀번호가 입력될 때 문자가 표시되지 않고 "ㅇ"로 표시되게 하려면 아래의 방법을 사용하면 된다.
+    android:password="true" => 예전 기능, 사용 자제
+    android:inputType="textPassword" => 새 기능, 이거 사용 권장
+-->
+
+        <EditText
+            android:id="@+id/et2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="사용자 비밀번호를 입력하시오"
+            android:inputType="textPassword"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:onClick="viewData"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="확인하기"
+            />
+
+        <Button
+            android:onClick="goBack"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="돌아가기"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:onClick="viewData"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="확인하기"
+            android:layout_weight="1"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="10dp"
+            />
+
+        <Button
+            android:onClick="goBack"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="돌아가기"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="50dp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

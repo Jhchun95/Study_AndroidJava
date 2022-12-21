@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    set 전용 속성
+    android:fillAfter : 애니메이션이 실행된 후 상태 유지 여부를 지정한다.
+        true => 애니메이션이 실행된 후 상태를 유지한다 => 애니메이션이 종료된 자리에 그대로 종료한다.
+        false => 기본값, 애니메이션이 실행된 후 처음 위치로 돌아간다. => 실행되기 전 상태로 종료한다.
+
+-->
+
+
+
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+         translate : 움직이는 애니메이션
+         android:fromXDelta : 애니메이션이 시작될 View의 X축 위치를 % 단위로 입력한다.
+         android:fromYDelta : 애니메이션이 시작될 View의 Y축 위치를 % 단위로 입력한다.
+         android:toXDelta : 애니메이션이 종료될 View의 X축 위치를 % 단위로 입력한다.
+         android:toYDelta : 애니메이션이 종료될 View의 Y축 위치를 % 단위로 입력한다.
+         android:duration : 애니메이션이 재생될 시간을 1/1000초 단위로 입력한다.
+         android:repeatMode : 애니메이션 재생 방법을 지정한다.
+                restart => 기본값, 처음부터 애니메이션이 실행된다.
+                reverse => 역순으로 애니메이션이 실행된다. 왕복
+         android:repeatCount : 애니메이션 반복 횟수를 지정한다.
+            0이 기본값, 입력한 쇳수보다 1번 더 실행된다. -1을 입력하면 무한 반복된다.
+         android:startOffset : 애니메이션이 실행되기 전에 대기할 시간을 1/1000초 단위로 입력한다.
+    -->
+
+    <translate
+        android:fromXDelta="0%"
+        android:toXDelta="60%"
+        android:duration="1000"
+        android:repeatMode ="reverse"
+        android:repeatCount = "0"
+        android:startOffset= "0"
+        />
+
+    <translate
+        android:fromYDelta="0%"
+        android:toYDelta="80%"
+        android:duration="1000"
+        android:repeatMode ="reverse"
+        android:repeatCount = "0"
+        android:startOffset= "1000"
+        />
+
+    <translate
+        android:fromXDelta="0%"
+        android:toXDelta="-60%"
+        android:duration="1000"
+        android:repeatMode ="reverse"
+        android:repeatCount = "0"
+        android:startOffset= "2000"
+        />
+
+    <translate
+        android:fromYDelta="0%"
+        android:toYDelta="-80%"
+        android:duration="1000"
+        android:repeatMode ="reverse"
+        android:repeatCount = "0"
+        android:startOffset= "3000"
+        />
+
+    <translate
+        android:fromYDelta="0%"
+        android:toXDelta="30%"
+        android:fromXDelta="0"
+        android:toYDelta="40%"
+        android:duration="1000"
+        android:repeatMode ="reverse"
+        android:repeatCount = "0"
+        android:startOffset= "4000"
+        />
+
+    <!--
+        scale : 크기를 변경하는 애니메이션
+        android:fromXScale : 애니메이션이 시작될 때 가로 크기를 실수로 입력한다. => 1.0이 원래 크기를 의미한다.
+        android:fromYScale : 애니메이션이 시작될 때 세로 크기를 실수로 입력한다. => 1.0이 원래 크기를 의미한다.
+        android:toXScale : 애니메이션이 종료될 때 가로 크기를 실수로 입력한다.
+        android:toXScale : 애니메이션이 종료될 때 가로 크기를 실수로 입력한다.
+        android:pivotX : 크기를 변경할 때 중심이 될 가로 위치를 비율로 입력한다.
+        android:pivotY : 크기를 변경할 때 중심이 될 세로 위치를 비율로 입력한다.
+    -->
+
+    <scale
+        android:fromXScale="1.0"
+        android:toXScale="2.0"
+        android:fromYScale="1.0"
+        android:toYScale="2.0"
+        android:duration = "1000"
+        android:startOffset = "5000"
+        android:pivotX="50%"
+        android:pivotY="50%"/>
+
+    <!--
+        rotate : 회전을 시키는 애니메이션
+        android:fromDegrees: 애니메이션이 시작될 때 각도를 지정한다.
+        android:toDegrees : 애니메이션이 종료될 때 각도를 지정한다.
+        => 각도를 양수로 입력하면 시계 방향으로 음수를 입력하면 시계 반대 방향으로 회전한다.
+    -->
+
+    <rotate
+        android:fromDegrees="0"
+        android:toDegrees="1080"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:duration="1000"
+        android:startOffset = "6000"/>
+
+    <!--
+        alpha : 투명도를 변경하는 애니메이션
+        android:fromAlpha : 애니메이션이 시작될 때의 투명도를 입력한다. 1.0 => 완전 불투명, 0.0 => 투명
+        android:toAlpha : 애니메이션이 종료될 때의 투명도를 입력한다.
+    -->
+
+    <alpha
+        android:fromAlpha="1.0"
+        android:toAlpha="0.2"
+        android:duration="1000"
+        android:startOffset="7000"/>
+
+
+
+</set>

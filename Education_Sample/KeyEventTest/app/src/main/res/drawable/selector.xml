@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        selector 파일 만들기 : drawalbe 폴더에서 우클릭 => New => Drawable resource file
+        selector 파일을 이용해서 포커스의 유무에 따라 동적으로 배경색 또는 그림을 변경시킬 수 있다.
+        selector는 selector를 적용할 위젯의 android:background 속성에 지정한다.
+
+        item 태그에 selector가 동작할 속성을 지정하고 android:drawable 속성에
+        색상이나 이미지를 지정한다.
+        색상은 colors.xml 파일에 반드시 색상을 등록한 후 사용해야한다.
+
+        android:state_focused="true" or "false" => 포커스를 가지는 상태
+        android:state_enabled="true" or "false" => 사용 가능 상태
+        android:state_selected="true" or "false" => 선택된 상태
+        android:state_pressed="true" or "false" => 클릭된(누르고 있는) 상태
+        android:state_checked="true" or "false" => 체크된 상태
+
+     -->
+
+    <item
+        android:state_focused="true"
+        android:drawable="@color/myColor"/>
+
+    <item
+        android:state_pressed="true"
+        android:drawable="@color/yourColor"/>
+
+    <item
+        android:state_focused="false"
+        android:drawable="@color/colorPrimaryDark"/>
+
+
+
+</selector>

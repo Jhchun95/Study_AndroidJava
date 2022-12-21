@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:onClick="changeImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="이미지 바꾸기"
+        />
+
+<!--
+    FrameLayout은 여러 레이아웃이나 위젯을 하나의 레이아웃에서 겹쳐서 사용할 수 있다.
+    android:visibility 속성은 액티비티에 위젯의 표시 여부를 지정한다.
+    visible(기본값) => 액티비티에 위젯을 보여준다. invisible => 액티비티에 위젯을 보여주지 않는다.
+
+    src 항상 나중에 위에 올라가는 것이 대부분이다.
+-->
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+        <ImageView
+            android:id="@+id/iv1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/dream01"
+            android:visibility="visible"/>
+        <ImageView
+            android:id="@+id/iv2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/dream02"
+            android:visibility="invisible"/>
+        <ImageView
+            android:id="@+id/iv3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/image01"
+            android:visibility="invisible"/>
+        <ImageView
+            android:id="@+id/iv4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/image02"
+            android:visibility="invisible"/>
+
+    </FrameLayout>
+
+
+</RelativeLayout>

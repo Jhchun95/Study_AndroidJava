@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "현재 값 : 0" />
+
+    <!--
+        ProgressBar => 진행율 표시하기
+        ProgressBar style
+        휠
+        style="?android:attr/progressBarStyle"(기본값)
+        style="?android:attr/progressBarStyleInverse"
+        큰 휠
+        style="?android:attr/progressBarStyleLarge"
+        style="?android:attr/progressBarStyleLargeInverse"
+        작은 휠
+        style="?android:attr/progressBarStyleSmall"
+        style="?android:attr/progressBarStyleSmallInverse"
+        style="?android:attr/progressBarStyleSmallTitle"
+        가로 막대
+
+    -->
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:progress="0"
+        android:max="1000"/>
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:progress="0"
+        android:max="1000"/>
+
+<!--
+    RatingBar => 별점 주기
+    RatingBar style
+    style="?android:attr/ratingBarStyleIndicator"
+
+
+-->
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        style="?android:attr/ratingBarStyleIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

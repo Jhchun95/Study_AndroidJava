@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <translate
+        android:fromXDelta="0%"
+        android:toXDelta="60%"
+        android:duration="2000" /> <!--  재생시간 -->
+
+    <!--    fromXDelta, fromYDelta, toXDelta, toYDelta에 비율을 입력하고 "%"뒤에 "p"를 붙이면 자신의 View 영역을 벗어나서
+            액티비티에 표시된 전체 영역의 비율을 의미한다.
+
+     -->
+    <translate
+        android:fromYDelta="0%"
+        android:toYDelta="50%p"
+        android:duration="2000"
+        android:startOffset="2000" />
+    <translate
+        android:fromYDelta="0%"
+        android:toXDelta="-60%"
+        android:duration="2000"
+        android:startOffset="4000" />
+    <translate
+        android:fromYDelta="0%"
+        android:toXDelta="-85%"
+        android:duration="2000"
+        android:startOffset="6000" />
+
+
+
+</set>

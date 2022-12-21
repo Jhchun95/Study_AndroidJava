@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_logoy"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="30dp"
+            android:paddingLeft="20dp">
+
+            <RelativeLayout
+                android:id="@+id/r1"
+                android:nextFocusUp="@+id/r3"
+                android:nextFocusDown="@+id/r2"
+                android:nextFocusRight="@+id/Category1"
+                android:focusable="true"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginBottom="30dp">
+
+                <ImageButton
+                    android:id="@+id/search_btn"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/ic_icon1"
+                    android:alpha="0.4"
+                    android:layout_marginRight="10dp"
+                    >
+                </ImageButton>
+                <EditText
+                    android:gravity="center"
+                    android:id="@+id/search_tv"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:hint="검색하십시오."
+                    android:textSize="10dp"
+                    android:padding="5dp"
+                    android:visibility="gone"
+                    android:background="#DF504D4D"
+                    android:layout_toRightOf="@+id/search_btn"
+                    />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/r2"
+                android:nextFocusUp="@+id/r1"
+                android:nextFocusDown="@+id/r3"
+                android:nextFocusRight="@+id/Category1"
+                android:focusable="true"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginBottom="30dp">
+                <ImageButton
+                    android:id="@+id/account_btn"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/ic_icon2"
+                    android:alpha="0.4"
+                    android:layout_marginRight="10dp"
+                    >
+                </ImageButton>
+                <TextView
+                    android:gravity="center"
+                    android:visibility="gone"
+
+                    android:id="@+id/account_tv"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:hint="___님, 환영합니다.\n계정을 확인합니다."
+                    android:textSize="10dp"
+                    android:padding="3dp"
+                    android:background="#DF504D4D"
+                    android:layout_toRightOf="@+id/account_btn"
+                    />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/r3"
+                android:nextFocusUp="@+id/r2"
+                android:nextFocusDown="@+id/r4"
+                android:nextFocusRight="@+id/Category1"
+                android:focusable="true"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginBottom="30dp">
+                <ImageButton
+                    android:id="@+id/setting_btn"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/ic_icon3"
+                    android:alpha="0.4"
+                    android:layout_marginRight="10dp"
+                    >
+                </ImageButton>
+                <TextView
+                    android:id="@+id/setting_tv"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:visibility="gone"
+
+                    android:gravity="center"
+                    android:hint="설정으로 이동"
+                    android:textSize="10dp"
+                    android:padding="5dp"
+                    android:background="#DF504D4D"
+
+                    android:layout_toRightOf="@+id/setting_btn"/>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/r4"
+                android:nextFocusUp="@+id/r3"
+                android:nextFocusDown="@+id/r1"
+                android:nextFocusRight="@+id/Category1"
+                android:focusable="true"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginBottom="30dp">
+                <ImageButton
+                    android:id="@+id/home_btn"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/ic_home"
+                    android:alpha="0.4"
+                    android:layout_marginRight="10dp">
+                </ImageButton>
+                <TextView
+                    android:id="@+id/home_tv"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:visibility="gone"
+                    android:gravity="center"
+                    android:hint="홈으로 돌아가기"
+                    android:textSize="10dp"
+                    android:padding="5dp"
+                    android:background="#DF504D4D"
+                    android:layout_toRightOf="@+id/home_btn"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <FrameLayout
+            android:id="@+id/main_frame"
+            android:layout_width="950dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="40dp"
+            android:paddingRight="50dp">
+        </FrameLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="환경설정" />
+    <item
+        android:title="메추라기" />
+    <item
+        android:title="해오라기" />
+    <item
+        android:title="논병아리" />
+</menu>

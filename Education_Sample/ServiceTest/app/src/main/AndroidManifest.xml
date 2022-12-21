@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.servicetest">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--
+              서비스 기능을 구현하려면 AndroidManifest.xml 파일에 반드시 서비스 등록을 해야하고 서비스 기능을 구현한 클래스는
+              반드시 android.app 패키지의 Service 클래스를 상속받아 만들어야 한다.
+         -->
+        <!--  서비스를 등록한다.  -->
+        <service android:name=".MyService"/>
+
+    </application>
+
+</manifest>

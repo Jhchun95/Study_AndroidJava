@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+     메뉴 만들기 : res 폴더에 menu라는 이름의 폴더를 만들고 메뉴로 표시할 내용이 작성된 xml 파일을 만든다.
+     menu 폴더 : res 폴더 우클릭 => New => Directory => menu 입력
+     menu 설정 xml 파일 만들기 : menu 폴더 우클릭 => New => Menu resource file
+-->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--  서브 메뉴를 만들지 않는 간단한 메뉴는 바로 item 태그를 사용해서 만들어주면 된다.  -->
+    <!--
+            <item
+                android:id="@+id/menu1"
+                android:title="수고하셨습니다1." />
+            <item
+                android:id="@+id/menu2"
+                android:title="수고하셨습니다2." />
+            <item
+                android:id="@+id/menu3"
+                android:title="수고하셨습니다3." />
+    -->
+
+    <!--  서브 메뉴를 가지는 복잡한 메뉴는 item 태그 내부에 다시 menu 태그를 정의해서 만들어준다.  -->
+
+    <item
+        android:title="메뉴 제목"> <!-- 서브 메뉴 제목 -->
+        <menu>
+            <item
+                android:id="@+id/menu1"
+                android:title="수고하셨습니다1." />     <!-- 서브 메뉴 항목 -->
+            <item
+                android:id="@+id/menu2"
+                android:title="수고하셨습니다2." />
+            <item
+                android:id="@+id/menu3"
+                android:title="수고하셨습니다3." />
+        </menu>
+    </item>
+
+</menu>
